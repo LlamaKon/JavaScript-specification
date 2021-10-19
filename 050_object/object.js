@@ -12,9 +12,9 @@ console.log(human.name);
 
 // オブジェクトの定義と値の代入を同時に行う方法
 const person = {
-    name : ['Code', 'Mafia'],
+name : ['Code', 'Mafia'],
     gender : 'male',
-    interests : {sports: 'soccer', music: 'piano'},
+interests : {sports: 'soccer', music: 'piano'},
 
     getFullName: function() {
         console.log(this.name[0] + ' ' +  this.name[1]);
@@ -43,5 +43,6 @@ console.log(person);
 
 // personオブジェクトのgetFullNameメソッドを呼び出し
 person.getFullName();
+
 
 
