@@ -1,0 +1,29 @@
+// ベースとするscssを記載　
+@import 'breakpoints/base';
+
+// サブとするscssを記載
+@media screen and (min-width: 480px) {
+    @import 'breakpoints/480up';
+}
+
+@media screen and (min-width: 600px) {
+    @import 'breakpoints/600up';
+}
+
+@media screen and (min-width: 960px) {
+    @import 'breakpoints/480up';
+}
+
+@media screen and (min-width: 1280px) {
+    @import 'breakpoints/480up';
+}
+
+@media (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        @import 'breakpoints/2x';
+}
+
+@media print {
+    @import 'breakpoints/print';
+}
+
