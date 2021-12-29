@@ -1,0 +1,61 @@
+#container {
+ text-align: center;   
+}
+
+.btn {
+
+    background-color: white;
+    color: black;
+
+    /*　縁取り設定
+
+        第１引数 -> 太さ
+        第２引数 -> スタイル
+        第３引数 -> 色
+    */
+    border: 1px solid black;
+    
+    /* 文字と枠線の間の余白設定
+
+        第１引数 -> 上
+        第２引数 -> 右
+        第３引数 -> 下
+        第４引数 -> 左
+    */
+    /*
+    padding: 10px 40px -> 下記と一緒
+    padding: 10px      -> 全て同じ値
+    */
+    padding: 10px 40px 10px 40px;
+
+    /* 要素の外の余白を設定 */
+    margin: 50px 0px;
+    
+    /*　文字の太さ
+    
+        デフォルトは500
+    */
+    font-weight: 600;
+
+    /* マウスカーソルを設定 */
+    cursor: pointer;
+
+    /* アニメーション 
+
+        第１引数 -> プロパティを指定
+        第２引数 -> 変化にかける時間
+        第３引数 -> 変化の緩急
+        第４引数 -> 変化の開始時間
+
+        複数のプロパティを指定する場合はカンマで区切る
+    */
+    transition: color 1.5s ease 0.4s,
+                background-color 1.5s ease 2s;  
+
+}
+
+/* :hover -> 要素の上にホバーした時の処理 */
+.btn:hover {
+    background-color: black;
+    color: white;
+}
